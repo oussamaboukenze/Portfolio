@@ -1,0 +1,367 @@
+* {
+  background-color: black;
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+}
+
+/* top-header */
+
+header{
+  padding: 4rem 0rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+header .top-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 4rem;
+  padding: 0;
+  width: 80%;
+}
+
+header .top-header h2 {
+  font-size: 25px;
+  color: white;
+}
+
+.top-header .navbar{
+    display: flex;
+    flex-flow: column-reverse wrap;
+}
+
+header .top-header nav ul {
+  list-style: none;
+  align-content: center;
+  display: flex;
+  gap: 1rem;
+}
+
+header .top-header nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.top-header svg{
+  display: none;
+}
+
+/* middle-header */
+
+header .middle-header {
+  display: grid;
+  grid-template-rows: 20% 20% 10% 10% 20% 20%;
+  grid-template-columns: 20% 20% 10% 10% 20% 20%;
+  height: 80vh;
+  align-items: center;
+  align-content: center;
+  margin: 0px 3rem;
+  width: 80%;
+}
+
+header .middle-header h1 {
+  font-size: 48px;
+  background: -webkit-linear-gradient(#8e56eb, #432279);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  grid-area: 2/1/4/4;
+  z-index: 1;
+  text-shadow: 0px 0px #432279;
+
+}
+
+header .middle-header h3 {
+  background-color: transparent;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  grid-area: 4/1/5/4;
+  z-index: 1;
+}
+
+header .middle-header #Full-stack {
+  background-color: transparent;
+  color: #38b6ff;
+}
+
+header .middle-header .circle {
+  height: 400px;
+  width: 400px;
+  background: linear-gradient(#432279, #8e56eb);
+  box-shadow: 0 10px 15px rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  grid-area: 1/4/7/7;
+  justify-self: center;
+  z-index: 0;
+}
+
+/* bottom-header */
+.bottom-header {
+  width: 100%;
+  position: absolute;
+  height: fit-content;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: white;
+}
+
+.bottom-header .contact-info {
+  display: flex;
+  background-color: white;
+  gap: 3px;
+  margin: 10px;
+}
+
+.bottom-header .contact-info .svg-contact {
+  background-color: white;
+}
+
+.bottom-header .contact-info .svg-contact svg {
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  color: black;
+}
+
+.bottom-header .contact-info .link {
+  align-self: center;
+background-color: white
+}
+
+.bottom-header .contact-info a {
+  text-decoration: none;
+  background-color: white;
+  color: black;
+}
+
+
+
+/* section 1 */
+.section1{
+
+  text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 h2{
+  margin: 1rem 2rem;
+  padding: 2rem 3rem;
+}
+
+.section1 h3,p{
+  padding: 0.5rem 1rem;
+}
+.section1 .container{
+  width: 70%;
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+  margin: 0rem 5rem ;
+  gap: 5rem;
+}
+
+.section1 .container .item{
+  display: flex;
+    gap: 0.5rem;
+  flex-direction: row;
+  align-items: center;
+}
+
+.section1 .container .item:nth-child(2){
+  flex-direction: row-reverse;
+}
+
+.section1 .container .item .item-txt{
+  border: 1px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.section1 .container .item img{
+  background-color: transparent;
+  height: 40vh;
+}
+
+
+/* contact */
+
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-items{
+  display: flex;
+  width: 70%;
+}
+
+.contact h2{
+  margin: 1rem 2rem;
+  padding: 2rem 3rem;
+  color: white;
+}
+
+.contact-form {
+  border-radius: 5px;
+  color: #432279;
+  padding: 20px;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #8e56eb;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background: linear-gradient(#432279, #8e56eb);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+
+@media (max-width:1023px){
+  header .top-header {
+    margin: 1rem;
+    align-items: flex-start;
+  }
+  .top-header nav {
+    display: block;
+  }
+
+  header .top-header nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .top-header svg{
+    display: block;
+    color: white;
+    height: 32px;
+    width: 32px;
+  }
+
+  .section1 .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section1 .container .item:nth-child(2){
+    flex-direction: column;
+  }
+
+    .section1 .container .item .item-txt{
+      align-items: center;
+  text-align: center;
+}
+
+  
+  header .middle-header h1 {
+    grid-area: 2/1/4/5;
+  }
+
+  header .middle-header h3 {
+    grid-area: 4/1/5/5;
+  }
+
+  .contact-items{
+    flex-direction: column-reverse;
+  }
+  
+
+}
+
+@media (max-width: 767px) {
+  .top-header {
+    margin: 1rem;
+    align-items: flex-start;
+  }
+  .top-header nav {
+    display: none;
+    position:absolute;
+    top: 4.2rem;
+    right: 0.2rem;
+  }
+
+  .top-header h2{
+    align-self: flex-start;
+  }
+
+  header .top-header nav ul {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .top-header svg{
+    display: block;
+    color: white;
+    height: 32px;
+    width: 32px;
+  }
+
+  header .middle-header .circle {
+    display: none;
+  }
+
+  header .middle-header h1 {
+    text-align: center;
+    grid-area: 2/1/4/7;
+  }
+
+  header .middle-header h3 {
+    text-align: center;
+    grid-area: 4/1/5/7;
+  }
+
+  .section1 .container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .section1 .container .item img{
+    height: 30vh;
+  }
+  
+  .section1 .container .item:nth-child(2){
+    flex-direction: column;
+  }
+  
+  .section1 .container .item .item-txt{
+  text-align: center;
+    align-items: center;
+}
+
+.contact-items{
+  flex-direction: column-reverse;
+}
+
+  
+}
